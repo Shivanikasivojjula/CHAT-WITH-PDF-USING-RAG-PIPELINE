@@ -1,0 +1,8 @@
+# Load PDF
+local_path = "scammer-agent.pdf"
+if local_path:
+    loader = UnstructuredPDFLoader(file_path=local_path)
+    data = loader.load()
+    print(f"PDF loaded successfully: {local_path}")
+else:
+    print("Upload a PDF file")
