@@ -1,0 +1,4 @@
+# Split text into chunks
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+chunks = text_splitter.split_documents(data)
+print(f"Text split into {len(chunks)} chunks")
