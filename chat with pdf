@@ -1,0 +1,7 @@
+def chat_with_pdf(question):
+    """
+    Chat with the PDF using the RAG chain.
+    """
+    return display(Markdown(chain.invoke(question)))
+# Example 1
+chat_with_pdf("What is the main idea of this document?")
