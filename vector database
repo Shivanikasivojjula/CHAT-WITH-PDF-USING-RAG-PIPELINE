@@ -1,0 +1,7 @@
+# Create vector database
+vector_db = Chroma.from_documents(
+    documents=chunks,
+    embedding=OllamaEmbeddings(model="nomic-embed-text"),
+    collection_name="local-rag"
+)
+print("Vector database created successfully")
